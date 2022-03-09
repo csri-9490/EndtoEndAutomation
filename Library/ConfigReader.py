@@ -7,4 +7,4 @@ def readConfigData(section,key):
 
 def readele(section,key):
     config.read("..\\Config\\Elements.cfg")
-    return config.get(section,key)
+    return config.get(section,key)#ddf

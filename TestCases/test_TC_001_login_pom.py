@@ -26,6 +26,6 @@ def test_login(datas):
     login_pg.enter_password(datas[1])
     time.sleep(5)
     login_pg.click_login()
-    time.sleep(10)
+    time.sleep(5)
 
 

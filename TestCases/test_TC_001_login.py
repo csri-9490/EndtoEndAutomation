@@ -15,3 +15,4 @@ def test_login():
     driver.find_element(By.CSS_SELECTOR,"input[name='pass']").send_keys(TestData.PASSWORD)
     driver.find_element(By.XPATH,"//button[text()='Log In']").click()
 
+

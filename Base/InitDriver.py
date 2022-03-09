@@ -20,9 +20,6 @@ def setBrowser():
     else:
     #elif((ConfigReader.readConfigData('Details','Browser'))=="firefox"):
         driver=webdriver.firefox(executable_path="D:\\drivers\\geckodriver.exe")
-
-    # driver.get(TestData.BASE_URL)
-    # driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=op)
     driver.get(readConfigData('Details','URL'))
     driver.maximize_window()
     return driver
