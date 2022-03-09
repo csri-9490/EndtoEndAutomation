@@ -17,15 +17,15 @@ from DataDriven.TestData import DataGen
 
 # @pytest.mark.parametrize('datas',DataGen())
 #///////////////////////////////////////////////////////#
-@pytest.mark.parametrize('datas',DataGen())
-def test_login(datas):
+@pytest.mark.parametrize('datas1',DataGen())
+def test_login(datas1):
 
     driver=InitDriver.setBrowser()
     login_pg=LoginPage.LoginClass(driver)
-    login_pg.enter_username(datas[0])
-    login_pg.enter_password(datas[1])
-    time.sleep(5)
+    login_pg.enter_username(datas1[0])
+    login_pg.enter_password(datas1[1])
+    time.sleep(4)
     login_pg.click_login()
-    time.sleep(5)
+    time.sleep(6)
 
 

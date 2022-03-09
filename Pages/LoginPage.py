@@ -3,9 +3,9 @@ from selenium.webdriver.common.by import By
 from Library import ConfigReader
 
 class  LoginClass:
-    def __init__(self,obj):
+    def __init__(self,obj1):
         global driver
-        driver=obj
+        driver=obj1
     def enter_username(self,username):
         driver.find_element(By.XPATH, "//input[@id='email']").send_keys(username)
 

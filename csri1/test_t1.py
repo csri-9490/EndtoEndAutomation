@@ -14,6 +14,6 @@ class Test1:
         driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
         driver.get("https://opensource-demo.orangehrmlive.com/index.php/auth/login")
         driver.find_element(By.XPATH, "//input[@id='txtUsername']").send_keys(username)
-        time.sleep(10)
+        time.sleep(5)
 
 
